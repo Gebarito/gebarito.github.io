@@ -22,8 +22,10 @@ const i18n = {
         chuva_b5: "• Escrevia testes únitarios com PHPUnit e testes de aceitação com Gherkin e Cucumber.",
         chuva_b6: "• Utilizava git para versionamento e docker para conteinerização. Além de uma pipeline de ci/cd com github actions.",
         edu_title: "Escolaridade",
-        edu_period: "2022 - 2025",
-        edu_degree: "Tive a oportunidade de estudar a teoria e prática da computação em disciplinas como: Estrutura de dados e Algoritmos, Sistemas Operacionais, Banco de dados, Engenharia de software.\nAlém disso participei de hackathons da receita federal, onde pude dar um novo proposito a chips e leds de dispositivos apreendidos e do NASA Space Apps.Participei duas vezes da fêira de ciências da faculdade, já tendo chegado ao pódio uma vez da área de atuação do projeto."
+        edu_subtitle: "Bacharelado em Ciência da Computação",
+        edu_subtitle2: "Ensino médio com técnico em informatica",
+        edu_degree: "Tive a oportunidade de estudar a teoria e prática da computação em disciplinas como: Estrutura de dados e Algoritmos, Sistemas Operacionais, Banco de dados, Engenharia de software.\nAlém disso participei de hackathons da receita federal, onde pude dar um novo proposito a chips e leds de dispositivos apreendidos e do NASA Space Apps.Participei duas vezes da fêira de ciências da faculdade, já tendo chegado ao pódio uma vez da área de atuação do projeto.",
+        edu_degree2: "",
     },
     en: {
         subtitle: "Software engineer",
@@ -49,8 +51,10 @@ const i18n = {
         chuva_b5: "• Wrote unit tests with PHPUnit and acceptance tests with Gherkin and Cucumber.",
         chuva_b6: "• Used Git for version control and Docker for containerization, along with a CI/CD pipeline via GitHub Actions.",
         edu_title: "Education",
-        edu_period: "2022 - 2025",
-        edu_degree: "I had the opportunity to study both the theory and practice of computing in subjects such as: Data Structures and Algorithms, Operating Systems, Databases, and Software Engineering.\nI also participated in hackathons held by the Brazilian Federal Revenue, where I helped repurpose chips and LEDs from seized devices, as well as the NASA Space Apps Challenge. I participated twice in the university science fair, reaching the podium once in my project's area."
+        edu_subtitle: "Bachelor of Computer Science",
+        edu_subtitle2: "Computing Technical Course",
+        edu_degree: "I had the opportunity to study both the theory and practice of computing in subjects such as: Data Structures and Algorithms, Operating Systems, Databases, and Software Engineering.\nI also participated in hackathons held by the Brazilian Federal Revenue, where I helped repurpose chips and LEDs from seized devices, as well as the NASA Space Apps Challenge. I participated twice in the university science fair, reaching the podium once in my project's area.",
+        edu_degree2: ""
     }
 };
 
@@ -61,7 +65,6 @@ function applyLang(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (strings[key] !== undefined) {
-            // preserve newlines for edu-period
             el.innerHTML = strings[key].replace(/\n/g, '<br>');
         }
     });
