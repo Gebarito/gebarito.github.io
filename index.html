@@ -12,9 +12,7 @@
 </head>
 
 <body>
-    <!-- ── Navbar ── -->
     <nav class="navbar">
-        <!-- PDF Download -->
         <button class="nav-btn" id="btn-pdf" title="Download PDF">
             <svg viewBox="0 0 24 24">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -24,7 +22,6 @@
             <span>PDF</span>
         </button>
 
-        <!-- Language switcher -->
         <div class="lang-wrapper">
             <button class="nav-btn" id="btn-lang" title="Language">
                 <span id="lang-label">🇧🇷 PT/BR</span>
@@ -38,7 +35,6 @@
             </div>
         </div>
 
-        <!-- Dark mode -->
         <button class="nav-btn" id="btn-dark" title="Toggle dark mode">
             <svg class="dark-icon-moon" viewBox="0 0 24 24">
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
@@ -62,7 +58,7 @@
 
         <div class="header">
             <div class="header-left">
-                <h1 class="name">João P. Gebara</h1>
+                <h1 class="name">João Pedro Gebara</h1>
                 <p class="subtitle" data-i18n="subtitle"></p>
                 <p class="location">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="1.8"
@@ -72,10 +68,10 @@
                         <path
                             d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                     </svg>
-                    Salto, São Paulo, Brazil.
+                    Salto - SP, Brasil.
                 </p>
                 <div class="contact-icons">
-                    <a class="icon-btn" href="mailto:joao.gebara.dev@gmail.com" title="Email">
+                    <a class="icon-btn" href="mailto:joaopedrogebara@gmail.com" title="Email">
                         <svg viewBox="0 0 24 24">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                             <polyline points="22,6 12,13 2,6" />
@@ -103,7 +99,6 @@
                 </div>
             </div>
 
-            <!-- Print-only: vertical contact list anchored to the right -->
             <div class="print-contacts" id="print-contacts">
                 <a class="print-contact-item" href="gebarito.github.io">
                     <span id="pc-website">gebarito.github.io</span>
@@ -152,6 +147,12 @@
             <p class="about-text" data-i18n="about_text"></p>
         </section>
 
+        <!-- Objective -->
+        <section>
+            <h2 class="section-title" data-i18n="objective_title"></h2>
+            <p class="about-text" data-i18n="objective_text"></p>
+        </section>
+
         <!-- Experience -->
         <section>
             <h2 class="section-title" data-i18n="exp_title"></h2>
@@ -159,7 +160,7 @@
             <div class="entry">
                 <div class="entry-top">
                     <div class="entry-company-row">
-                        <span class="company">Siemens Brasil</span>
+                        <span class="company">Siemens AG, Jundiaí - SP.</span>
                         <span class="tag" data-i18n="tag_embedded"></span>
                         <span class="tag">Hardware</span>
                         <span class="tag">Javascript</span>
@@ -181,7 +182,7 @@
             <div class="entry">
                 <div class="entry-top">
                     <div class="entry-company-row">
-                        <span class="company">Chuva inc</span>
+                        <span class="company">Chuva inc, Campinas - SP.</span>
                         <span class="tag">PHP</span>
                         <span class="tag">TypeScript</span>
                         <span class="tag">Angular</span>
@@ -209,8 +210,12 @@
             <h2 class="section-title" data-i18n="edu_title"></h2>
             <div class="edu-entry">
                 <div class="edu-top">
-                    <span class="edu-institution">Instituto Federal de Educação, Ciência e Tecnologia de São
-                        Paulo,<br>Campus Salto</span>
+                    <span class="edu-institution">Bacharelado em Ciência da Computação
+                        <span class="tag" style="font-weight: 400;">JAVA</span>
+                        <span class="tag" style="font-weight: 400;">AWS</span>
+                        <span class="tag" style="font-weight: 400;">C/C++</span>
+                        <span class="tag" style="font-weight: 400;">Elêtronicos</span>
+                        <br>IFSP - Instituto Federal de São Paulo, Câmpus Salto</span>
                     <div class="edu-period" data-i18n="edu_period"></div>
                 </div>
                 <p class="edu-degree" data-i18n="edu_degree"></p>
@@ -221,20 +226,20 @@
         <section>
             <h2 class="section-title">Skills</h2>
             <div class="skills-wrap">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">C++</span>
                 <span class="skill-tag">PHP</span>
                 <span class="skill-tag">TypeScript</span>
                 <span class="skill-tag">Angular</span>
+                <span class="skill-tag">AWS</span>
                 <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Linux</span>
                 <span class="skill-tag">Git</span>
                 <span class="skill-tag">CI/CD</span>
-                <span class="skill-tag">Drupal</span>
+                <span class="skill-tag">Metodologia Agil</span>
+                <span class="skill-tag">Postgres</span>
                 <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">Cypress</span>
-                <span class="skill-tag">PHPUnit</span>
-                <span class="skill-tag">Gherkin</span>
-                <span class="skill-tag">Cucumber</span>
-                <span class="skill-tag">GitHub Actions</span>
-                <span class="skill-tag">Figma</span>
             </div>
         </section>
 
