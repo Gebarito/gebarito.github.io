@@ -24,8 +24,8 @@ const i18n = {
         edu_title: "Escolaridade",
         edu_subtitle: "Bacharelado em Ciência da Computação",
         edu_subtitle2: "Ensino médio com técnico em informatica",
-        edu_degree: "Tive a oportunidade de estudar a teoria e prática da computação em disciplinas como: Estrutura de dados e Algoritmos, Sistemas Operacionais, Banco de dados, Engenharia de software.\nAlém disso participei de hackathons da receita federal, onde pude dar um novo proposito a chips e leds de dispositivos apreendidos e do NASA Space Apps.Participei duas vezes da fêira de ciências da faculdade, já tendo chegado ao pódio uma vez da área de atuação do projeto.",
-        edu_degree2: "",
+        edu_degree: "Tive a oportunidade de estudar a teoria e prática da computação em disciplinas como: Estrutura de dados e Algoritmos, Sistemas Operacionais, Banco de dados, Engenharia de software utilizando Java e Spring.\nAlém disso participei de hackathons da receita federal, onde pude dar um novo proposito a chips e leds de dispositivos apreendidos e do NASA Space Apps.Participei duas vezes da fêira de ciências da faculdade, já tendo chegado ao pódio uma vez da área de atuação do projeto.",
+        edu_degree2: "Ensino médio integrado ao técnico em informática, tiver a oportunidade de desenvolver projetos de robôtica com arduino, esp8266 e outros microprocessadores. Além de desenvolver meus projetos desktop com C# e Web com Java JSP, EJB, Jakarta EE e JDBC.",
     },
     en: {
         subtitle: "Software engineer",
@@ -53,8 +53,8 @@ const i18n = {
         edu_title: "Education",
         edu_subtitle: "Bachelor of Computer Science",
         edu_subtitle2: "Computing Technical Course",
-        edu_degree: "I had the opportunity to study both the theory and practice of computing in subjects such as: Data Structures and Algorithms, Operating Systems, Databases, and Software Engineering.\nI also participated in hackathons held by the Brazilian Federal Revenue, where I helped repurpose chips and LEDs from seized devices, as well as the NASA Space Apps Challenge. I participated twice in the university science fair, reaching the podium once in my project's area.",
-        edu_degree2: ""
+        edu_degree: "I had the opportunity to study both the theory and practice of computing in subjects such as: Data Structures and Algorithms, Operating Systems, Databases, and Software Engineering using Java and Spring.\nI also participated in hackathons held by the Brazilian Federal Revenue, where I helped repurpose chips and LEDs from seized devices, as well as the NASA Space Apps Challenge. I participated twice in the university science fair, reaching the podium once in my project's area.",
+        edu_degree2: "High School Technical Informatics Student with a strong background in embedded systems, robotics development using Arduino and ESP8266, and proficiency in desktop and web application development. Experienced in designing, prototyping, and programming functional electronic devices, complemented by skills in C#, Java EE (JSP, EJB, JDBC), and database management."
     }
 };
 
