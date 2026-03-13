@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>João Gebara</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ── Navbar ── -->
+    <nav class="navbar">
+        <!-- PDF Download -->
+        <button class="nav-btn" id="btn-pdf" title="Download PDF">
+            <svg viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>PDF</span>
+        </button>
+
+        <!-- Language switcher -->
+        <div class="lang-wrapper">
+            <button class="nav-btn" id="btn-lang" title="Language">
+                <span id="lang-label">🇧🇷 PT/BR</span>
+                <svg viewBox="0 0 24 24" style="width:10px;height:10px">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+            </button>
+            <div class="lang-dropdown" id="lang-dropdown">
+                <div class="lang-option active" data-lang="pt">🇧🇷 PT/BR</div>
+                <div class="lang-option" data-lang="en">🇺🇸 EN/US</div>
+            </div>
+        </div>
+
+        <!-- Dark mode -->
+        <button class="nav-btn" id="btn-dark" title="Toggle dark mode">
+            <svg class="dark-icon-moon" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="dark-icon-sun" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- ── Resume ── -->
+    <div class="page" id="resume-page">
+
+        <div class="header">
+            <div class="header-left">
+                <h1 class="name">João P. Gebara</h1>
+                <p class="subtitle" data-i18n="subtitle"></p>
+                <p class="location">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    Salto, São Paulo, Brazil.
+                </p>
+                <div class="contact-icons">
+                    <a class="icon-btn" href="mailto:joao.gebara.dev@gmail.com" title="Email">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                    <a class="icon-btn" href="https://wa.me/5511989981158" title="Phone" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.56 1.38h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z" />
+                        </svg>
+                    </a>
+                    <a class="icon-btn" href="https://github.com/Gebarito" title="GitHub" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a class="icon-btn" href="https://www.linkedin.com/in/joaogebara/" title="LinkedIn" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Print-only: vertical contact list anchored to the right -->
+            <div class="print-contacts" id="print-contacts">
+                <a class="print-contact-item" href="gebarito.github.io">
+                    <span id="pc-website">gebarito.github.io</span>
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                </a>
+                <a class="print-contact-item" href="mailto:joao.gebara.dev@gmail.com">
+                    <span id="pc-email">joao.gebara.dev@gmail.com</span>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </a>
+                <a class="print-contact-item" href="https://wa.me/5511989981158">
+                    <span id="pc-phone">+55 (11)98998-1158</span>
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.56 2 2 0 0 1 3.56 1.38h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z" />
+                    </svg>
+                </a>
+                <a class="print-contact-item" href="https://github.com/Gebarito">
+                    <span id="pc-github">github.com/Gebarito</span>
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+                <a class="print-contact-item" href="https://www.linkedin.com/in/joaogebara/">
+                    <span id="pc-linkedin">linkedin.com/in/joaogebara</span>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- About -->
+        <section>
+            <h2 class="section-title" data-i18n="about_title"></h2>
+            <p class="about-text" data-i18n="about_text"></p>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2 class="section-title" data-i18n="exp_title"></h2>
+
+            <div class="entry">
+                <div class="entry-top">
+                    <div class="entry-company-row">
+                        <span class="company">Siemens Brasil</span>
+                        <span class="tag" data-i18n="tag_embedded"></span>
+                        <span class="tag">Hardware</span>
+                        <span class="tag">Javascript</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">C</span>
+                    </div>
+                    <span class="period">01/2025 - 03/2026</span>
+                </div>
+                <p class="entry-role" data-i18n="siemens_role"></p>
+                <div class="entry-body">
+                    <p data-i18n="siemens_desc"></p>
+                    <p data-i18n="siemens_b1"></p>
+                    <p data-i18n="siemens_b2"></p>
+                    <p data-i18n="siemens_b3"></p>
+                    <p data-i18n="siemens_b4"></p>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-top">
+                    <div class="entry-company-row">
+                        <span class="company">Chuva inc</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                    <span class="period">07/2024 - 12/2024</span>
+                </div>
+                <p class="entry-role" data-i18n="chuva_role"></p>
+                <div class="entry-body">
+                    <p data-i18n="chuva_desc"></p>
+                    <p data-i18n="chuva_b1"></p>
+                    <p data-i18n="chuva_b2"></p>
+                    <p data-i18n="chuva_b3"></p>
+                    <p data-i18n="chuva_b4"></p>
+                    <p data-i18n="chuva_b5"></p>
+                    <p data-i18n="chuva_b6"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2 class="section-title" data-i18n="edu_title"></h2>
+            <div class="edu-entry">
+                <div class="edu-top">
+                    <span class="edu-institution">Instituto Federal de Educação, Ciência e Tecnologia de São
+                        Paulo,<br>Campus Salto</span>
+                    <div class="edu-period" data-i18n="edu_period"></div>
+                </div>
+                <p class="edu-degree" data-i18n="edu_degree"></p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-wrap">
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Angular</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Drupal</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Cypress</span>
+                <span class="skill-tag">PHPUnit</span>
+                <span class="skill-tag">Gherkin</span>
+                <span class="skill-tag">Cucumber</span>
+                <span class="skill-tag">GitHub Actions</span>
+                <span class="skill-tag">Figma</span>
+            </div>
+        </section>
+
+    </div><!-- /page -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
